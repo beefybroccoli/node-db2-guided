@@ -1,1 +1,9 @@
 npx knex migrate:make first-mgigration
+
+npx knex migrate:up
+
+npx knex migrate:down
+
+npx knex migrate:latest
+
+npx knex migrate:rollback

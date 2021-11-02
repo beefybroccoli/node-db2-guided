@@ -6,7 +6,7 @@ exports.seed = function (knex) {
         // BUG NUMBER 1 IN UNIT 4:
         // trying to seed records with an id
         // remember the db provides this
-        { colName: 'rowValue1' },
+        { fruit_name: 'apple', avg_weight: 20.8, color: 'red', delicious: true },
       ])
     })
 }

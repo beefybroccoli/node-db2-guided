@@ -40,7 +40,10 @@ router.post('/', (req, res) => {
       db('fruits').where({ id: ids[0] })
         .then(newFruitEntry => {
           res.status(201).json(newFruitEntry);
-        });
+        })
+        .catch(err => {
+          
+        })
     })
     .catch(err => {
       console.log('POST error', err);

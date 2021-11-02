@@ -1,6 +1,6 @@
 exports.up = async function(knex) {
   await knex.schema.createTable('fruits', table => {
-    table.increments() // shortcut for 'id' column, primary key, auto inc integers
+    table.increments('fruit_id') // shortcut for 'id' column, primary key, auto inc integers
   })
 };
 

@@ -5,8 +5,8 @@ exports.up = function(knex) {
     table.decimal('avg_weight')
     table.boolean('delicious')
   })
-};
+}
 
 exports.down = function(knex) {
   return knex.schema.dropTableIfExists('fruits')
-};
+}

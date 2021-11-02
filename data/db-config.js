@@ -3,3 +3,4 @@
 const knex = require('knex')
 const settings = require('../knexfile')
 
+const env = process.env.NODE_ENV

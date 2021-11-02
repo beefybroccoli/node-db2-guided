@@ -3,9 +3,10 @@ exports.seed = function (knex) {
   return knex('fruits').truncate() // deletes rows and resets the primary key
     .then(function () {
       return knex('fruits').insert([
-        { id: 1, colName: 'rowValue1' },
-        { id: 2, colName: 'rowValue2' },
-        { id: 3, colName: 'rowValue3' }
+        // BUG NUMBER 1 IN UNIT 4:
+        // trying to seed records with an id
+        // remember the db provides this
+        { colName: 'rowValue1' },
       ])
     })
 }

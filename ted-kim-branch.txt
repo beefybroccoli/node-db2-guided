@@ -7,3 +7,5 @@ npx knex migrate:down
 npx knex migrate:latest
 
 npx knex migrate:rollback
+
+npx knex seed:make [file name]
